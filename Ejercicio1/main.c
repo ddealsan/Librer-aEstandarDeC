@@ -10,3 +10,6 @@ int main() {
 
     // Parte b - Generar un número aleatorio con semilla cambiante
     srand(time(0));
+
+    int numero_aleatorio = rand();
+    printf("Número aleatorio: %d\n", numero_aleatorio);
