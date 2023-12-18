@@ -9,3 +9,8 @@ int main() {
     int comparison = strcmp(str1, str2);
 
     if (comparison == 0) {
+        printf("Las cadenas son iguales.\n");
+    } else {
+        printf("Las cadenas son diferentes.\n");
+    }
+    }
