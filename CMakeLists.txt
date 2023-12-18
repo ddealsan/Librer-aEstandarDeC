@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 
 add_executable(Ejercicio1
-        Ejercicio1/main.cpp
+        Ejercicio1/main.c
 )
