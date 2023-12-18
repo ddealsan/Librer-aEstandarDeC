@@ -13,3 +13,4 @@ int main() {
 
     int numero_aleatorio = rand();
     printf("Número aleatorio: %d\n", numero_aleatorio);
+    
