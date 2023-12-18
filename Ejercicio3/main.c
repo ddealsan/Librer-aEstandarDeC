@@ -1,42 +1,34 @@
 #include <stdio.h>
 
 int main() {
-    // Parte a - Abrir un archivo de texto para lectura
-    FILE *file = fopen("file.txt", "r");
-    if (file == NULL) {
-        printf("El archivo no se pudo abrir.\n");
-        return 1;
-    }
-
-// Cerrar el archivo al final de la lectura
-    fclose(file);
-
-    // Parte b - Escribir y leer en un archivo de texto
-    file = fopen("file.txt", "w");
+    // Intenta abrir el archivo para escritura
+    FILE *file = fopen("file.txt", "w");
     if (file == NULL) {
         printf("El archivo no se pudo abrir para escritura.\n");
         return 1;
     }
 
+    // Escribe en el archivo
     fprintf(file, "Hola, mundo!\n");
 
-    // Cerrar el archivo después de escribir
+    // Cierra el archivo después de escribir
     fclose(file);
 
-    // Abrir de nuevo para leer
+    // Abre de nuevo para lectura
     file = fopen("file.txt", "r");
     if (file == NULL) {
         printf("El archivo no se pudo abrir para lectura.\n");
         return 1;
     }
 
+    // Lee desde el archivo
     char buffer[50];
     fscanf(file, "%s", buffer);
 
+    // Muestra el contenido leído
     printf("Leído del archivo: %s\n", buffer);
 
-    // Cerrar el archivo después de leer
+    // Cierra el archivo después de leer
     fclose(file);
-
-    return 0;
+return 0;
 }
