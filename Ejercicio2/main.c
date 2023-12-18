@@ -13,4 +13,7 @@ int main() {
     } else {
         printf("Las cadenas son diferentes.\n");
     }
+    // Parte b - Calcular la longitud de una cadena
+    char str[] = "Hola mundo";
+
     }
